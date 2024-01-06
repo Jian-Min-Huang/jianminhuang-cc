@@ -8,7 +8,7 @@ function App() {
       <img src={ImageAvatar} alt="Avatar" className={`h-64 w-64 rounded-full border-4 border-[#e89619] shadow-2xl`} />
       <h1 className={`text-xl font-bold text-white`}>Jian-Min (Vincent) Huang</h1>
       <p className={`text-white`}>👨‍💻 Coder｜ 🎤 Speaker｜ 👨‍🏫 Mentor｜ 🚀 Leader</p>
-      <section className={`mt-4 flex max-w-[280px] flex-wrap justify-center gap-8 text-[#e89619]`}>
+      <section className={`mt-4 flex max-w-[280px] flex-wrap justify-center gap-8 text-white`}>
         <a href={`https://docs.google.com/document/d/1w3OKshhacU1vv2I6tAx-GSqNue8Nj_jm-_zHPkTzgrw`}>
           <FaRegNewspaper size={72} />
         </a>
