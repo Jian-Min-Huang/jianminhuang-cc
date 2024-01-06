@@ -51,3 +51,7 @@ You can learn more in
 the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+npm install -D tailwindcss postcss autoprefixer @tailwindcss/typography eslint eslint-plugin-react eslint-plugin-tailwindcss
+npm install --save-dev --save-exact prettier prettier-plugin-tailwindcss
+npx tailwindcss init
