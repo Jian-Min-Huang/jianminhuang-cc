@@ -19,14 +19,14 @@ export default function App() {
 
   return (
     <article className={`mx-auto my-8 flex flex-col items-center gap-4 bg-gray-100`}>
-      <img src={ImageAvatar} alt="Avatar" className={`mx-auto h-64 w-64 rounded-full border-4 border-[#e89619]`} />
+      <img src={ImageAvatar} alt="Avatar" className={`mx-auto h-80 w-80 rounded-full border-4 border-[#e89619]`} />
       <h1 className={`mx-auto font-mono text-xl font-bold text-[#00386b]`}>Jian-Min (Vincent) Huang</h1>
       <div className={`flex flex-col gap-1 font-mono text-[#00386b]`}>
         <p className={`text-lg font-semibold`}>
           <span className={`text-[#e89619]`}>$_purefunc</span>, Co-founder
         </p>
       </div>
-      <section className={`flex w-64 flex-col justify-start gap-2 font-mono font-medium text-base text-[#00386b]`}>
+      <section className={`flex w-64 flex-col justify-start gap-2 font-mono text-base font-medium text-[#00386b]`}>
         <div className={`flex flex-row items-center gap-2`}>
           <FaBuilding size={20} />
           <a
@@ -51,10 +51,7 @@ export default function App() {
         </div>
         <div className={`flex flex-row items-center gap-2`}>
           <FaEnvelope size={20} />
-          <a
-            href={`mailto:yfr.huang@hotmail.com`}
-            target="_blank"
-            rel="noreferrer">
+          <a href={`mailto:yfr.huang@hotmail.com`}>
             yfr.huang@hotmail.com
           </a>
         </div>
@@ -106,7 +103,7 @@ export default function App() {
         <div className={`flex flex-row items-center gap-2`}>
           <FaTwitter size={20} />
           <a
-            href={`"https://twitter.com/JianMin_V_Huang`}
+            href={`https://twitter.com/JianMin_V_Huang`}
             target="_blank"
             rel="noreferrer">
             @JianMin_V_Huang
