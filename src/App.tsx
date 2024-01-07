@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageAvatar from './assets/avatar.jpg';
+import ImageAvatar from './assets/avatar.webp';
 import { FaFacebook, FaGithub, FaGoogle, FaLinkedin, FaMicrophone, FaRegNewspaper, FaTelegram, FaTwitter, FaYoutube } from 'react-icons/fa6';
 
 export default function App() {
