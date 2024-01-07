@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageAvatar from './assets/avatar.webp';
+import ImageWIP from './assets/wip.webp';
 import {
   FaBuilding,
   FaClock,
@@ -18,18 +19,18 @@ export default function App() {
   const date: Date = new Date();
 
   return (
-    <div className={`my-8 flex flex-wrap justify-center gap-8 bg-gray-100`}>
+    <div className={`my-8 flex flex-wrap justify-center gap-8 bg-gray-100 font-mono text-[#00386b]`}>
       <aside className={`flex flex-col items-center gap-8 md:flex-row md:gap-16 lg:flex-col lg:gap-8`}>
         <div className={`flex flex-col gap-4`}>
           <img src={ImageAvatar} alt="Avatar" className={`h-80 w-80 rounded-full border-4 border-[#e89619]`} />
-          <h1 className={`font-mono text-xl font-bold text-[#00386b]`}>Jian-Min (Vincent) Huang</h1>
-          <div className={`flex flex-col gap-1 font-mono text-[#00386b]`}>
+          <h1 className={`text-xl font-bold`}>Jian-Min (Vincent) Huang</h1>
+          <div className={`flex flex-col gap-1`}>
             <p className={`text-lg font-semibold`}>
               <span className={`text-[#e89619]`}>$_purefunc</span>, Co-founder
             </p>
           </div>
         </div>
-        <section className={`flex w-64 flex-col justify-start gap-2 font-mono text-base font-medium text-[#00386b]`}>
+        <section className={`flex w-64 flex-col justify-start gap-2 text-base font-medium`}>
           <div className={`flex flex-row items-center gap-2`}>
             <FaBuilding size={20} />
             <a
@@ -50,7 +51,7 @@ export default function App() {
           </div>
           <div className={`flex flex-row items-center gap-2`}>
             <FaClock size={20} />
-            <span className={`font-mono text-base`}>{`${date.getHours()}:${date.getMinutes()}`} (UTC +08:00)</span>
+            <span>{`${date.getHours()}:${date.getMinutes()}`} (UTC +08:00)</span>
           </div>
           <div className={`flex flex-row items-center gap-2`}>
             <FaEnvelope size={20} />
@@ -123,14 +124,18 @@ export default function App() {
           </div>
         </section>
       </aside>
-      <section className={`hidden w-[640px] gap-8 border border-gray-500 p-8 font-mono md:flex md:flex-col`}>
-        <h2 className={`border-b border-gray-500 font-mono text-xl font-bold text-[#00386b]`}>Hi there 👋, I am Vincent Huang 😎</h2>
-        <ul className={`text-lg font-semibold text-[#00386b]`}>
-          <li><span className={`px-2`}>-</span>MBTI - ESFJ</li>
-          <li><span className={`px-2`}>-</span>Coder, Speaker, Mentor, Leader</li>
-          <li><span className={`px-2`}>-</span>Joint of React Frontend & JVM Backend & DevOps</li>
-          <li><span className={`px-2`}>-</span>Google Developer Expert (Kotlin)</li>
+      <section className={`hidden w-[640px] gap-8 border border-gray-500 p-8 md:flex md:flex-col`}>
+        <h2 className={`border-b border-gray-500 pb-2 text-xl font-bold`}>Hi there 👋, I am Vincent Huang 😎</h2>
+        <ul className={`text-lg font-semibold`}>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            MBTI - <a href={`https://www.16personalities.com/esfj-personality`} target={`_blank`} className={`border-b border-[#00386b]`}>ESFJ</a>
+          </li>
+          <li><span className={`px-2 font-extrabold text-[#e89619]`}>-</span>Coder, Speaker, Mentor, Leader</li>
+          <li><span className={`px-2 font-extrabold text-[#e89619]`}>-</span>Joint of React Frontend & JVM Backend & DevOps</li>
+          <li><span className={`px-2 font-extrabold text-[#e89619]`}>-</span>Google Developer Expert (Kotlin)</li>
         </ul>
+        <img src={ImageWIP} alt="Work in Progress" className={`w-[512px] aspect-square mx-auto`} />
       </section>
     </div>
   )
