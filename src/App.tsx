@@ -1,6 +1,5 @@
 import React from 'react';
 import ImageAvatar from './assets/avatar.webp';
-import ImageWIP from './assets/wip.webp';
 import {
   FaBuilding,
   FaClock,
@@ -126,7 +125,7 @@ export default function App() {
       </aside>
       <section className={`hidden w-[640px] gap-8 border border-gray-500 p-8 md:flex md:flex-col`}>
         <h2 className={`border-b border-gray-500 pb-2 text-xl font-bold`}>Hi there 👋, I am Vincent Huang 😎</h2>
-        <ul className={`text-lg font-semibold`}>
+        <ul className={`text-base font-medium`}>
           <li>
             <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
             MBTI - <a href={`https://www.16personalities.com/esfj-personality`} target={`_blank`} className={`border-b border-[#00386b]`}>ESFJ</a>
@@ -135,7 +134,129 @@ export default function App() {
           <li><span className={`px-2 font-extrabold text-[#e89619]`}>-</span>Joint of React Frontend & JVM Backend & DevOps</li>
           <li><span className={`px-2 font-extrabold text-[#e89619]`}>-</span>Google Developer Expert (Kotlin)</li>
         </ul>
-        <img src={ImageWIP} alt="Work in Progress" className={`w-[512px] aspect-square mx-auto`} />
+        <h3 className={`border-b border-gray-500 pb-2 text-xl font-bold`}>2023, Public Speaking</h3>
+        <ul className={`text-base font-medium`}>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+        </ul>
+        <h3 className={`border-b border-gray-500 pb-2 text-xl font-bold`}>2022, Public Speaking</h3>
+        <ul className={`text-base font-medium`}>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+          <li>
+            <span className={`px-2 font-extrabold text-[#e89619]`}>-</span>
+            <a
+              href={``}
+              target={`_blank`}
+              className={`border-b border-[#00386b]`}>
+              TODO
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
   )
