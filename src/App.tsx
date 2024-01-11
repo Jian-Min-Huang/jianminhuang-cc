@@ -4,12 +4,14 @@ import {
   FaBuilding,
   FaClock,
   FaEnvelope,
-  FaFacebook, FaFloppyDisk,
+  FaFacebook,
+  FaFloppyDisk,
   FaGithub,
   FaGoogle,
   FaLinkedin,
   FaLocationDot,
-  FaMicrophoneLines, FaRegStar,
+  FaMicrophoneLines,
+  FaRegStar,
   FaTwitter,
   FaYoutube
 } from 'react-icons/fa6';
@@ -25,7 +27,7 @@ export default function App() {
             alt="Avatar"
             width={296}
             height={296}
-            className={`mx-auto rounded-full border-4 border-[#e89619] shadow-lg`} />
+            className={`mx-auto rounded-full border-4 border-[#e89619] shadow-lg`}/>
           <h1 className={`text-xl font-bold`}>Jian-Min (Vincent) Huang</h1>
           <div className={`flex flex-col gap-1`}>
             <p className={`text-lg font-semibold`}>
@@ -116,71 +118,71 @@ export default function App() {
             </a>
           </div>
           <div className={`flex flex-wrap gap-4 text-sm`}>
-            <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
-              <span className={`flex flex-row items-center gap-2 font-semibold`}>
-               <FaFloppyDisk size={16} />
-                <a
-                  href={`https://github.com/b2etw/Spring-Kotlin-iThome-2021`}
-                  target={`_blank`}
-                  rel="noreferrer">
+            <a
+              href={`https://github.com/b2etw/Spring-Kotlin-iThome-2021`}
+              target={`_blank`}
+              rel="noreferrer">
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+                <span className={`flex flex-row items-center gap-2 font-semibold`}>
+                  <FaFloppyDisk size={16}/>
                   Spring-Kotlin-iThome-2021
-                </a>
-              </span>
-              <div className={`flex flex-row items-center gap-2`}>
-                <FaRegStar size={16} />
-                38
-                <span className={`font-medium text-purple-700`}>Kotlin</span>
+                </span>
+                <div className={`flex flex-row items-center gap-2`}>
+                  <FaRegStar size={16}/>
+                  38
+                  <span className={`font-medium text-purple-700`}>Kotlin</span>
+                </div>
               </div>
-            </div>
-            <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
-              <span className={`flex flex-row items-center gap-2 font-semibold`}>
-               <FaFloppyDisk size={16} />
-                <a
-                  href={`https://github.com/PureFuncInc/pure-backend-practice`}
-                  target={`_blank`}
-                  rel="noreferrer">
+            </a>
+            <a
+              href={`https://github.com/PureFuncInc/pure-backend-practice`}
+              target={`_blank`}
+              rel="noreferrer">
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+                <span className={`flex flex-row items-center gap-2 font-semibold`}>
+                  <FaFloppyDisk size={16}/>
                   pure-backend-practice
-                </a>
-              </span>
-              <div className={`flex flex-row items-center gap-2`}>
-                <FaRegStar size={16} />
-                54
-                <span className={`font-medium text-yellow-600`}>Java</span>
+                </span>
+                <div className={`flex flex-row items-center gap-2`}>
+                  <FaRegStar size={16}/>
+                  54
+                  <span className={`font-medium text-yellow-600`}>Java</span>
+                </div>
               </div>
-            </div>
-            <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
-              <span className={`flex flex-row items-center gap-2 font-semibold`}>
-               <FaFloppyDisk size={16} />
-                <a
-                  href={`https://github.com/taiwan-kotlin-user-group/emoji-jvm-string`}
-                  target={`_blank`}
-                  rel="noreferrer">
+            </a>
+            <a
+              href={`https://github.com/taiwan-kotlin-user-group/emoji-jvm-string`}
+              target={`_blank`}
+              rel="noreferrer">
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+                <span className={`flex flex-row items-center gap-2 font-semibold`}>
+                  <FaFloppyDisk size={16}/>
                   emoji-jvm-string
-                </a>
-              </span>
-              <div className={`flex flex-row items-center gap-2`}>
-                <FaRegStar size={16} />
-                21
-                <span className={`font-medium text-purple-700`}>Kotlin</span>
+                </span>
+                <div className={`flex flex-row items-center gap-2`}>
+                  <FaRegStar size={16}/>
+                  21
+                  <span className={`font-medium text-purple-700`}>Kotlin</span>
+                </div>
               </div>
-            </div>
-            <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
-              <span className={`flex flex-row items-center gap-2 font-semibold`}>
-               <FaFloppyDisk size={16} />
-                <a
-                  href={`https://github.com/PureFuncInc/spring-boot-3-practice`}
-                  target={`_blank`}
-                  rel="noreferrer">
+            </a>
+            <a
+              href={`https://github.com/PureFuncInc/spring-boot-3-practice`}
+              target={`_blank`}
+              rel="noreferrer">
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+                <span className={`flex flex-row items-center gap-2 font-semibold`}>
+                  <FaFloppyDisk size={16}/>
                   spring-boot-3-practice
-                </a>
-              </span>
-              <div className={`flex flex-row items-center gap-2`}>
-                <FaRegStar size={16} />
-                14
-                <span className={`font-medium text-yellow-600`}>Java</span>
-                <span className={`font-medium text-purple-700`}>Kotlin</span>
+                </span>
+                <div className={`flex flex-row items-center gap-2`}>
+                  <FaRegStar size={16}/>
+                  14
+                  <span className={`font-medium text-yellow-600`}>Java</span>
+                  <span className={`font-medium text-purple-700`}>Kotlin</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
@@ -194,57 +196,57 @@ function links() {
 
   return [
     {
-      icon: <FaBuilding size={20} />,
+      icon: <FaBuilding size={20}/>,
       href: 'https://purefunc.net',
       text: 'PureFunc Inc.'
     },
     {
-      icon: <FaLocationDot size={20} />,
+      icon: <FaLocationDot size={20}/>,
       href: 'https://en.wikipedia.org/wiki/Taipei',
       text: 'Taipei, Taiwan'
     },
     {
-      icon: <FaClock size={20} />,
+      icon: <FaClock size={20}/>,
       href: 'https://en.wikipedia.org/wiki/UTC%2B08:00',
       text: time
     },
     {
-      icon: <FaEnvelope size={20} />,
+      icon: <FaEnvelope size={20}/>,
       href: 'mailto:yfr.huang@hotmail.com',
       text: 'yfr.huang@hotmail.com'
     },
     {
-      icon: <FaLinkedin size={20} />,
+      icon: <FaLinkedin size={20}/>,
       href: 'https://www.linkedin.com/in/jian-min-huang',
       text: 'in/jian-min-huang'
     },
     {
-      icon: <FaGithub size={20} />,
+      icon: <FaGithub size={20}/>,
       href: 'https://github.com/Jian-Min-Huang',
       text: '@Jian-Min-Huang'
     },
     {
-      icon: <FaGoogle size={20} />,
+      icon: <FaGoogle size={20}/>,
       href: 'https://g.dev/Vincent',
       text: 'g.dev/Vincent'
     },
     {
-      icon: <FaMicrophoneLines size={20} />,
+      icon: <FaMicrophoneLines size={20}/>,
       href: 'https://github.com/Jian-Min-Huang/tech-note/wiki',
       text: 'Public Speaking'
     },
     {
-      icon: <FaFacebook size={20} />,
+      icon: <FaFacebook size={20}/>,
       href: 'https://www.facebook.com/yfr.huang/',
       text: '黃健旻'
     },
     {
-      icon: <FaTwitter size={20} />,
+      icon: <FaTwitter size={20}/>,
       href: 'https://twitter.com/JianMin_V_Huang',
       text: '@JianMin_V_Huang'
     },
     {
-      icon: <FaYoutube size={20} />,
+      icon: <FaYoutube size={20}/>,
       href: 'https://www.youtube.com/user/yfrhuang',
       text: '@yfrhuang'
     }
