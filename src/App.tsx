@@ -2,7 +2,6 @@ import React from 'react';
 import ImageAvatar from './assets/avatar.webp';
 import {
   FaBuilding,
-  FaClock,
   FaEnvelope,
   FaFacebook,
   FaFloppyDisk,
@@ -11,11 +10,11 @@ import {
   FaLinkedin,
   FaLocationDot,
   FaMicrophoneLines,
+  FaRegNewspaper,
   FaRegStar,
   FaTwitter,
   FaYoutube
 } from 'react-icons/fa6';
-import { formatHourOrMinute } from './utils/date'
 
 export default function App() {
   return (
@@ -191,14 +190,11 @@ export default function App() {
 }
 
 function links() {
-  const date: Date = new Date()
-  const time: string = `${formatHourOrMinute(date.getHours())}:${formatHourOrMinute(date.getMinutes())} (UTC +08:00)`
-
   return [
     {
       icon: <FaBuilding size={20}/>,
       href: 'https://purefunc.net',
-      text: 'PureFunc Inc.'
+      text: 'Purefunc Co., Ltd.'
     },
     {
       icon: <FaLocationDot size={20}/>,
@@ -206,14 +202,14 @@ function links() {
       text: 'Taipei, Taiwan'
     },
     {
-      icon: <FaClock size={20}/>,
-      href: 'https://en.wikipedia.org/wiki/UTC%2B08:00',
-      text: time
-    },
-    {
       icon: <FaEnvelope size={20}/>,
       href: 'mailto:yfr.huang@hotmail.com',
       text: 'yfr.huang@hotmail.com'
+    },
+    {
+      icon: <FaRegNewspaper size={20}/>,
+      href: 'https://docs.google.com/document/d/1w3OKshhacU1vv2I6tAx-GSqNue8Nj_jm-_zHPkTzgrw',
+      text: 'Curriculum Vitae'
     },
     {
       icon: <FaLinkedin size={20}/>,
