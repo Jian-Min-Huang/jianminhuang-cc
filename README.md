@@ -52,7 +52,7 @@ the [Create React App documentation](https://facebook.github.io/create-react-app
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-npx create-react-app jianminhuang.cc --template typescript
+npx create-react-app jianminhuang-cc --template typescript
 
 npm install -D tailwindcss tailwindcss-animated autoprefixer eslint-plugin-react eslint-plugin-tailwindcss prettier-plugin-tailwindcss
 npx tailwindcss init
