@@ -10,3 +10,5 @@
 *.xml
 *.http
 *.iml
+# GitHub Copilot persisted chat sessions
+/copilot/chatSessions

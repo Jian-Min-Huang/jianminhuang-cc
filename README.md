@@ -54,5 +54,8 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 npx create-react-app jianminhuang-cc --template typescript
 
-npm install -D tailwindcss tailwindcss-animated autoprefixer eslint-plugin-react eslint-plugin-tailwindcss prettier-plugin-tailwindcss
+npm install tailwindcss-animated react-icons react-youtube usehooks-ts
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+npm install --save-dev tailwindcss autoprefixer eslint-plugin-react eslint-plugin-tailwindcss
+npm install --save-dev --save-exact prettier prettier-plugin-tailwindcss
 npx tailwindcss init

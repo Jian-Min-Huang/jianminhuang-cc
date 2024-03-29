@@ -15,6 +15,7 @@ import {
   FaTwitter,
   FaYoutube
 } from 'react-icons/fa6';
+import YoutubePlayer from './components/youtube-player'
 
 export default function App() {
   return (
@@ -184,6 +185,9 @@ export default function App() {
             </a>
           </div>
         </div>
+      </section>
+      <section className={`hidden border border-gray-500 shadow-lg md:block md:w-[640px] lg:w-[984px]`}>
+        <YoutubePlayer videoId={`DTnUq22E6dM`} />
       </section>
     </div>
   )
