@@ -15,7 +15,7 @@ import {
   FaTwitter,
   FaYoutube
 } from 'react-icons/fa6';
-import YoutubePlayer from './components/youtube-player'
+import EmbeddedVideoPlayer from './components/embedded-video-player'
 
 export default function App() {
   return (
@@ -186,21 +186,23 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className={`hidden gap-6 border border-black shadow-lg md:flex md:w-[640px] md:flex-wrap lg:w-[984px]`}>
+      <section className={`hidden gap-6 md:flex md:w-[640px] md:flex-wrap lg:w-[984px]`}>
         {/*JCCONF 2023*/}
-        <YoutubePlayer videoId={`DTnUq22E6dM`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=DTnUq22E6dM`} />
         {/*JCCONF 2022*/}
-        <YoutubePlayer videoId={`yj8_i9Ray9o`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=yj8_i9Ray9o`} />
         {/*MOPCON 2021*/}
-        <YoutubePlayer videoId={`Ktw4OxsE9ug`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=Ktw4OxsE9ug`} />
         {/*COSCUP 2021*/}
-        <YoutubePlayer videoId={`7_WKAPR5z64`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=7_WKAPR5z64`} />
         {/*MOPCON 2020*/}
-        <YoutubePlayer videoId={`lQZSHfvp3lg`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=lQZSHfvp3lg`} />
         {/*JCCONF 2020*/}
-        <YoutubePlayer videoId={`91swUbkPOfU`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=91swUbkPOfU`} />
+        {/*MODERN WEB 2020*/}
+        <EmbeddedVideoPlayer url={`https://www.facebook.com/modernweb.tw/videos/393133648577227`} />
         {/*JCCONF 2019*/}
-        <YoutubePlayer videoId={`1gC7UY_IFec`} />
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=1gC7UY_IFec`} />
       </section>
     </div>
   )
@@ -209,17 +211,17 @@ export default function App() {
 function links() {
   return [
     {
-      icon: <FaBuilding size={20}/>,
+      icon: <FaBuilding size={20} />,
       href: 'https://purefunc.net',
       text: 'Purefunc Co., Ltd.'
     },
     {
-      icon: <FaLocationDot size={20}/>,
+      icon: <FaLocationDot size={20} />,
       href: 'https://en.wikipedia.org/wiki/Taipei',
       text: 'Taipei, Taiwan'
     },
     {
-      icon: <FaEnvelope size={20}/>,
+      icon: <FaEnvelope size={20} />,
       href: 'mailto:yfr.huang@hotmail.com',
       text: 'yfr.huang@hotmail.com'
     },
