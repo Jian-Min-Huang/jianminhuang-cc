@@ -19,15 +19,15 @@ import YoutubePlayer from './components/youtube-player'
 
 export default function App() {
   return (
-    <div className={`my-8 flex flex-wrap justify-center gap-6 bg-gray-100 font-mono text-[#00386b]`}>
-      <aside className={`flex flex-col gap-6 md:w-[640px] md:flex-row md:justify-between lg:w-[320px] lg:flex-col lg:gap-6`}>
-        <div className={`flex flex-col items-center gap-4 md:pl-6 lg:p-0`}>
+    <div className={`mx-auto my-8 flex max-w-[984px] flex-wrap justify-center gap-6 bg-gray-200 font-mono text-[#00386b]`}>
+      <aside className={`flex flex-col gap-6 rounded-md border border-black bg-gray-100 shadow-lg md:w-[640px] md:flex-row md:gap-0 lg:w-[320px] lg:flex-col lg:gap-6`}>
+        <div className={`flex flex-col items-center gap-4 px-6 pt-6 md:pb-6 lg:px-0 lg:pb-0`}>
           <img
             src={ImageAvatar}
             alt="Avatar"
             width={296}
             height={296}
-            className={`mx-auto rounded-full border-4 border-[#e89619] shadow-lg`}/>
+            className={`mx-auto aspect-square rounded-full border-4 border-[#e89619] shadow-lg md:w-[256px] lg:w-[290px]`}/>
           <h1 className={`text-xl font-bold`}>Jian-Min (Vincent) Huang</h1>
           <div className={`flex flex-col gap-1`}>
             <p className={`text-lg font-semibold`}>
@@ -35,13 +35,13 @@ export default function App() {
             </p>
           </div>
         </div>
-        <ul className={`flex flex-col gap-2 rounded-md border border-gray-500 px-6 pb-4 pt-6 text-base font-medium shadow-lg`}>
+        <ul className={`flex flex-col gap-2 rounded-b-md px-6 pb-6 text-base font-medium md:pt-6 lg:pt-0`}>
           {
             links()
               .map(link =>
                 <li
                   key={link.text}
-                  className={`flex flex-row items-center gap-2`}>
+                  className={`flex flex-row items-center gap-6`}>
                   {link.icon}
                   <a
                     href={link.href}
@@ -54,9 +54,9 @@ export default function App() {
           }
         </ul>
       </aside>
-      <section className={`hidden w-[640px] justify-between rounded-md border border-gray-500 px-6 pb-4 pt-6 shadow-lg md:flex md:flex-col`}>
+      <section className={`hidden w-[640px] justify-between rounded-md border border-black bg-gray-100 p-6 shadow-lg md:flex md:flex-col`}>
         <div className={`flex flex-col gap-8`}>
-          <h2 className={`flex flex-row gap-2 border-b border-gray-500 pb-2 text-xl font-bold`}>
+          <h2 className={`flex flex-row gap-2 border-b border-black pb-2 text-xl font-bold`}>
             Hi there
             <div className={`animate-wiggle-more animate-duration-[600ms] animate-infinite animate-ease-out`}>👋</div>
             , I am Vincent Huang
@@ -75,7 +75,7 @@ export default function App() {
                 )
             }
           </ul>
-          <div className={`flex flex-row items-center border-b border-gray-500 pb-2`}>
+          <div className={`flex flex-row items-center border-b border-black pb-2`}>
             <h3 className={`flex-1 text-xl font-bold`}>2023, Public Speaking</h3>
             <a
               href={`https://github.com/Jian-Min-Huang/tech-note/wiki/`}
@@ -108,7 +108,7 @@ export default function App() {
                 )
             }
           </ul>
-          <div className={`flex flex-row items-center border-b border-gray-500 pb-2`}>
+          <div className={`flex flex-row items-center border-b border-black pb-2`}>
             <h3 className={`flex-1 text-xl font-bold`}>Side Project</h3>
             <a
               href={`https://github.com/Jian-Min-Huang`}
@@ -122,12 +122,12 @@ export default function App() {
               href={`https://github.com/b2etw/Spring-Kotlin-iThome-2021`}
               target={`_blank`}
               rel="noreferrer">
-              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-black p-2`}>
                 <span className={`flex flex-row items-center gap-2 font-semibold`}>
                   <FaFloppyDisk size={16}/>
                   Spring-Kotlin-iThome-2021
                 </span>
-                <div className={`flex flex-row items-center gap-2`}>
+                <div className={`flex flex-row gap-2`}>
                   <FaRegStar size={16}/>
                   38
                   <span className={`font-medium text-purple-700`}>Kotlin</span>
@@ -138,12 +138,12 @@ export default function App() {
               href={`https://github.com/PureFuncInc/pure-backend-practice`}
               target={`_blank`}
               rel="noreferrer">
-              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-black p-2`}>
                 <span className={`flex flex-row items-center gap-2 font-semibold`}>
                   <FaFloppyDisk size={16}/>
                   pure-backend-practice
                 </span>
-                <div className={`flex flex-row items-center gap-2`}>
+                <div className={`flex flex-row gap-2`}>
                   <FaRegStar size={16}/>
                   54
                   <span className={`font-medium text-yellow-600`}>Java</span>
@@ -154,12 +154,12 @@ export default function App() {
               href={`https://github.com/taiwan-kotlin-user-group/emoji-jvm-string`}
               target={`_blank`}
               rel="noreferrer">
-              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-black p-2`}>
                 <span className={`flex flex-row items-center gap-2 font-semibold`}>
                   <FaFloppyDisk size={16}/>
                   emoji-jvm-string
                 </span>
-                <div className={`flex flex-row items-center gap-2`}>
+                <div className={`flex flex-row gap-2`}>
                   <FaRegStar size={16}/>
                   21
                   <span className={`font-medium text-purple-700`}>Kotlin</span>
@@ -170,12 +170,12 @@ export default function App() {
               href={`https://github.com/PureFuncInc/spring-boot-3-practice`}
               target={`_blank`}
               rel="noreferrer">
-              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-gray-500 p-2`}>
+              <div className={`flex w-[287px] flex-col gap-4 rounded-md border border-black p-2`}>
                 <span className={`flex flex-row items-center gap-2 font-semibold`}>
                   <FaFloppyDisk size={16}/>
                   spring-boot-3-practice
                 </span>
-                <div className={`flex flex-row items-center gap-2`}>
+                <div className={`flex flex-row gap-2`}>
                   <FaRegStar size={16}/>
                   14
                   <span className={`font-medium text-yellow-600`}>Java</span>
@@ -186,8 +186,21 @@ export default function App() {
           </div>
         </div>
       </section>
-      <section className={`hidden border border-gray-500 shadow-lg md:block md:w-[640px] lg:w-[984px]`}>
+      <section className={`hidden gap-6 border border-black shadow-lg md:flex md:w-[640px] md:flex-wrap lg:w-[984px]`}>
+        {/*JCCONF 2023*/}
         <YoutubePlayer videoId={`DTnUq22E6dM`} />
+        {/*JCCONF 2022*/}
+        <YoutubePlayer videoId={`yj8_i9Ray9o`} />
+        {/*MOPCON 2021*/}
+        <YoutubePlayer videoId={`Ktw4OxsE9ug`} />
+        {/*COSCUP 2021*/}
+        <YoutubePlayer videoId={`7_WKAPR5z64`} />
+        {/*MOPCON 2020*/}
+        <YoutubePlayer videoId={`lQZSHfvp3lg`} />
+        {/*JCCONF 2020*/}
+        <YoutubePlayer videoId={`91swUbkPOfU`} />
+        {/*JCCONF 2019*/}
+        <YoutubePlayer videoId={`1gC7UY_IFec`} />
       </section>
     </div>
   )
