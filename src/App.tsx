@@ -159,8 +159,6 @@ export default function App() {
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=lQZSHfvp3lg`} />
         {/*JCCONF 2020*/}
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=91swUbkPOfU`} />
-        {/*MODERN WEB 2020*/}
-        <EmbeddedVideoPlayer url={`https://www.facebook.com/modernweb.tw/videos/393133648577227`} />
         {/*JCCONF 2019*/}
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=1gC7UY_IFec`} />
       </section>
