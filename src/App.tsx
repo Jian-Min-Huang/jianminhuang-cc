@@ -29,12 +29,12 @@ export default function App() {
             alt="Avatar"
             width={296}
             height={296}
-            className={`mx-auto aspect-square rounded-full border-4 border-[#e89619] shadow-lg md:w-[256px] lg:w-[290px]`}
+            className={`mx-auto aspect-square rounded-full border-4 border-[#cf3735] shadow-lg md:w-[256px] lg:w-[290px]`}
           />
           <h1 className={`text-xl font-bold`}>Jian-Min (Vincent) Huang</h1>
           <div className={`flex flex-col gap-1`}>
             <p className={`text-lg font-semibold`}>
-              <span className={`text-[#e89619]`}>$_purefunc</span>, Co-founder
+              <span className={`text-[#cf3735]`}>OpenNet</span>, Backend Team Lead
             </p>
           </div>
         </div>
@@ -170,8 +170,8 @@ function links() {
   return [
     {
       icon: <FaBuilding size={20} />,
-      href: "https://purefunc.net",
-      text: "Purefunc Co., Ltd.",
+      href: "https://opennet.tw",
+      text: "OpenNet Co., Ltd.",
     },
     {
       icon: <FaLocationDot size={20} />,
@@ -227,7 +227,12 @@ function links() {
 }
 
 function introduction() {
-  return ["MBTI - ESFJ", "Coder, Speaker, Mentor, Leader", "Joint of React Frontend & JVM Backend & DevOps", "$_purefunc, Co-founder"];
+  return [
+    "MBTI - ESFJ",
+    "Coder, Speaker, Mentor, Leader",
+    "Strong expertise in software product development",
+    "Joint of React Frontend & JVM Backend & DevOps",
+  ];
 }
 
 function links2023() {
