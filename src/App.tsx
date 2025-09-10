@@ -65,13 +65,13 @@ export default function App() {
             ))}
           </ul>
           <div className={`flex flex-row items-center border-b border-black pb-2`}>
-            <h3 className={`flex-1 text-xl font-bold`}>2023, Public Speaking</h3>
+            <h3 className={`flex-1 text-xl font-bold`}>Recent Public Speaking</h3>
             <a href={`https://github.com/Jian-Min-Huang/tech-note/wiki/`} target={`_blank`} rel="noreferrer">
               ⋯⋯ more
             </a>
           </div>
           <ul className={`rounded-md bg-gray-200 text-base font-medium`}>
-            {links2023().map((link) => (
+            {recentLinks().map((link) => (
               <li key={link.name} className={`flex flex-row items-center gap-2`}>
                 <a href={link.slides} target={`_blank`} rel="noreferrer">
                   👉 Slides
@@ -155,12 +155,6 @@ export default function App() {
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=Ktw4OxsE9ug`} />
         {/*COSCUP 2021*/}
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=7_WKAPR5z64`} />
-        {/*MOPCON 2020*/}
-        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=lQZSHfvp3lg`} />
-        {/*JCCONF 2020*/}
-        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=91swUbkPOfU`} />
-        {/*JCCONF 2019*/}
-        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=1gC7UY_IFec`} />
       </section>
     </div>
   );
@@ -231,11 +225,11 @@ function introduction() {
     "MBTI - ESFJ",
     "Coder, Speaker, Mentor, Leader",
     "Strong expertise in software product development",
-    "Joint of React Frontend & JVM Backend & DevOps",
+    "React X JVM Backend X DevOps",
   ];
 }
 
-function links2023() {
+function recentLinks() {
   return [
     {
       slides: "https://docs.google.com/presentation/d/1-NiK_qBK1CFlIllbAwisGjfaVN_2K7-fSA8E4gh4lX8",
