@@ -148,13 +148,13 @@ export default function App() {
       </section>
       <section className={`hidden gap-6 md:flex md:w-[640px] md:flex-wrap lg:w-[984px]`}>
         {/*JCCONF 2023*/}
+        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=1Ad0o6BXt9o`} />
+        {/*JCCONF 2023*/}
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=DTnUq22E6dM`} />
         {/*JCCONF 2022*/}
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=yj8_i9Ray9o`} />
         {/*MOPCON 2021*/}
         <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=Ktw4OxsE9ug`} />
-        {/*COSCUP 2021*/}
-        <EmbeddedVideoPlayer url={`https://www.youtube.com/watch?v=7_WKAPR5z64`} />
       </section>
     </div>
   );
@@ -162,75 +162,36 @@ export default function App() {
 
 function links() {
   return [
-    {
-      icon: <FaBuilding size={20} />,
-      href: "https://opennet.tw",
-      text: "OpenNet Co., Ltd.",
-    },
-    {
-      icon: <FaLocationDot size={20} />,
-      href: "https://en.wikipedia.org/wiki/Taipei",
-      text: "Taipei, Taiwan",
-    },
-    {
-      icon: <FaEnvelope size={20} />,
-      href: "mailto:yfr.huang@hotmail.com",
-      text: "yfr.huang@hotmail.com",
-    },
-    {
-      icon: <FaRegNewspaper size={20} />,
-      href: "https://docs.google.com/document/d/1w3OKshhacU1vv2I6tAx-GSqNue8Nj_jm-_zHPkTzgrw",
-      text: "Curriculum Vitae",
-    },
-    {
-      icon: <FaLinkedin size={20} />,
-      href: "https://www.linkedin.com/in/jian-min-huang",
-      text: "in/jian-min-huang",
-    },
-    {
-      icon: <FaGithub size={20} />,
-      href: "https://github.com/Jian-Min-Huang",
-      text: "@Jian-Min-Huang",
-    },
-    {
-      icon: <FaGoogle size={20} />,
-      href: "https://g.dev/Vincent",
-      text: "g.dev/Vincent",
-    },
-    {
-      icon: <FaMicrophoneLines size={20} />,
-      href: "https://github.com/Jian-Min-Huang/tech-note/wiki",
-      text: "Public Speaking",
-    },
-    {
-      icon: <FaFacebook size={20} />,
-      href: "https://www.facebook.com/yfr.huang/",
-      text: "黃健旻",
-    },
-    {
-      icon: <FaTwitter size={20} />,
-      href: "https://twitter.com/JianMin_V_Huang",
-      text: "@JianMin_V_Huang",
-    },
-    {
-      icon: <FaYoutube size={20} />,
-      href: "https://www.youtube.com/user/yfrhuang",
-      text: "@yfrhuang",
-    },
+    { icon: <FaBuilding size={20} />, href: "https://opennet.tw", text: "OpenNet Co., Ltd." },
+    { icon: <FaLocationDot size={20} />, href: "https://en.wikipedia.org/wiki/Taipei", text: "Taipei, Taiwan" },
+    { icon: <FaEnvelope size={20} />, href: "mailto:yfr.huang@hotmail.com", text: "yfr.huang@hotmail.com" },
+    { icon: <FaRegNewspaper size={20} />, href: "https://docs.google.com/document/d/1w3OKshhacU1vv2I6tAx-GSqNue8Nj_jm-_zHPkTzgrw", text: "Curriculum Vitae" },
+    { icon: <FaLinkedin size={20} />, href: "https://www.linkedin.com/in/jian-min-huang", text: "in/jian-min-huang" },
+    { icon: <FaGithub size={20} />, href: "https://github.com/Jian-Min-Huang", text: "@Jian-Min-Huang" },
+    { icon: <FaGoogle size={20} />, href: "https://g.dev/Vincent", text: "g.dev/Vincent" },
+    { icon: <FaMicrophoneLines size={20} />, href: "https://github.com/Jian-Min-Huang/tech-note/wiki", text: "Public Speaking" },
+    { icon: <FaFacebook size={20} />, href: "https://www.facebook.com/yfr.huang/", text: "黃健旻" },
+    { icon: <FaTwitter size={20} />, href: "https://twitter.com/JianMin_V_Huang", text: "@JianMin_V_Huang" },
+    { icon: <FaYoutube size={20} />, href: "https://www.youtube.com/user/yfrhuang", text: "@yfrhuang" },
   ];
 }
 
 function introduction() {
   return [
-    "MBTI - ESFJ",
-    "Coder, Speaker, Mentor, Leader",
-    "Strong expertise in software product development",
-    "React X JVM Backend X DevOps",
+    "MBTI - ESFJ", 
+    "Coder, Speaker, Mentor, Leader", 
+    "Java & Kotlin Developer",
+    "Strong expertise in software product development", 
   ];
 }
 
 function recentLinks() {
   return [
+    { 
+      slides: "https://docs.google.com/presentation/d/1_K3on0yfvzXu19nX3nIbJmQfrSGyi2qtRckVb13x-w0", 
+      name: "JCConf 2025", 
+      href: "https://jcconf.tw/2025/" 
+    },
     {
       slides: "https://docs.google.com/presentation/d/1-NiK_qBK1CFlIllbAwisGjfaVN_2K7-fSA8E4gh4lX8",
       name: "GDG DevFest Taipei 2023",
@@ -246,10 +207,9 @@ function recentLinks() {
       name: "第15屆 IT邦幫忙鐵人賽",
       href: "https://ithelp.ithome.com.tw/users/20119361/ironman/6313",
     },
-    {
-      slides: "https://docs.google.com/presentation/d/1a4OEnSRN5ZupqFBCApJiQnYZxfVZ-ZeiWKGBTKDpGn4",
-      name: "JCConf 2023",
-      href: "https://jcconf.tw/2023/",
+    { slides: "https://docs.google.com/presentation/d/1a4OEnSRN5ZupqFBCApJiQnYZxfVZ-ZeiWKGBTKDpGn4", 
+      name: "JCConf 2023", 
+      href: "https://jcconf.tw/2023/" 
     },
     {
       slides: "https://docs.google.com/presentation/d/1BCa2Oy2xxIXdo6iIgwyMetgNFPJZ6oL112CXwn-o56M",
@@ -270,11 +230,6 @@ function recentLinks() {
       slides: "https://docs.google.com/presentation/d/19L3qmLbKYLmyD072owXfEwcCspRQK_LibnFuHPlUhgY",
       name: "DevOps Taiwan, Copilot 交流",
       href: "https://devops.kktix.cc/events/meetup-50",
-    },
-    {
-      slides: "https://docs.google.com/presentation/d/1m2LzC1bYmTWIChrB7CjMiQnExCukBvKH5h9W-2lyxcI",
-      name: "Kotlin Meetup 202302",
-      href: "https://gdg.community.dev/events/details/google-gdg-taipei-presents-kotlin-meetup-9/",
     },
   ];
 }
